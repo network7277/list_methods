@@ -6,5 +6,17 @@
     Returns:
         int: return answer
 */
-
-void main() {}
+int func( List list01 ){
+  int s = 0;
+  int i = 0;
+  while ( i < list01.length ){
+    if ( list01[i] == 0 ){
+      s ++;
+    }
+    i ++;
+  }
+  return s;
+}
+void main() {
+  print(func([0, 0, 0, 0, 0, 0, 0]));
+}
