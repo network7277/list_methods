@@ -11,6 +11,7 @@ List func( List numbers, int i ){
   var ans = numbers[i];
   var ans1 = numbers.removeAt(i);
   return [ans];
+  return ans;
 
 }
 void main() {
