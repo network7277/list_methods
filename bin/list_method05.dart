@@ -9,5 +9,11 @@
     Returns:
         list: return answer
 */
-
-void main() {}
+List func( List numbers1, List numbers2 ){
+  numbers2.insert(0, numbers1[numbers1.length - 1]);
+  var ans = numbers1.removeLast();
+  return numbers1 + numbers2;
+}
+void main() {
+  print(func([6, 8, 1], [3, 5, 7]));
+}
