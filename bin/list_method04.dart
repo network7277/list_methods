@@ -8,7 +8,7 @@
         list: return answer
 */
 List func( List <int> numbers, int i ){
-  var list = numbers[i];
+  int list = numbers[i];
   numbers.removeAt(i);
   return [list];
 }
