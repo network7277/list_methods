@@ -7,11 +7,10 @@
     Returns:
         list: return answer
 */
-List func( List fruits ){
-  String x = 'apelsin';
+List func( List fruits, String x ){
   fruits.add(x);
   return fruits;
 }
 void main() {
-  print(func(['apple', 'banana']));
+  print(func(['apple', 'banana'], 'kiwi'));
 }
