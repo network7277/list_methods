@@ -6,5 +6,17 @@
     Returns:
         list: return answer
 */
-
-void main() {}
+List func( List fruits ){
+  int i = 0;
+  while ( i < fruits.length ){
+    if ( fruits[i] == 'apple' ){
+      fruits.removeAt(i);
+      i --;
+    }
+    i ++;
+  }
+  return fruits;
+}
+void main() {
+  print(func(["apple", "apple", "apple", "apple", "kiwi"]));
+}
