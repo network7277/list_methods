@@ -7,12 +7,10 @@
     Returns:
         list: return answer
 */
-List func( List numbers, int i ){
-  var ans = numbers[i];
-  var ans1 = numbers.removeAt(i);
-  return [ans];
-  return ans;
-
+List func( List <int> numbers, int i ){
+  var list = numbers[i];
+  numbers.removeAt(i);
+  return [list];
 }
 void main() {
   print(func([4, 7, 3, 2, 8], 1));
