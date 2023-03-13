@@ -8,12 +8,11 @@
         list: return answer
 */
 List func( List numbers, int i ){
-  var ans = [numbers[i]];
-  if ( i >= 0 && i < numbers.length ){
-    numbers.removeAt(i);
-  }
-  return ans;
+  var ans = numbers[i];
+  var ans1 = numbers.removeAt(i);
+  return [ans];
+
 }
 void main() {
-  print(func([4, 7, 3, 2, 8], 2));
+  print(func([4, 7, 3, 2, 8], 1));
 }
