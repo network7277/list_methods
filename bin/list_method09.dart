@@ -7,11 +7,11 @@
         list: return answer
 */
 List func( List fruits ){
-  fruits[0] = 'apple';
   var list2 = [];
+  int s = 0;
   int i = 0;
   while ( i < fruits.length ){
-    if ( fruits[i] == fruits[0] ){
+    if ( fruits[i] == 'apple'){
       list2.add(i);
     }
     i++;
