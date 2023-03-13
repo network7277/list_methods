@@ -7,5 +7,13 @@
     Returns:
         list: return answer
 */
-
-void main() {}
+List func( List numbers, int i ){
+  List ans = [numbers[i]];
+  if ( i >= 0 && i < numbers.length ){
+    numbers.removeAt(i);
+  }
+  return ans;
+}
+void main() {
+  print(func([4, 7, 3, 2, 8], 4));
+}
