@@ -13,6 +13,7 @@ List func( List fruits ){
   while ( i < fruits.length ){
     if ( fruits[i] == 'apple'){
       list2.add(i);
+      s++;
     }
     i++;
   }
