@@ -10,8 +10,8 @@
 List func( List <int> numbers, int i ){
   var a = numbers[i];
   var ans = numbers.removeAt(i);
+
   return [a];
-  return [ans];
 }
 void main() {
   print(func([4, 7, 3, 2, 8], 1));
