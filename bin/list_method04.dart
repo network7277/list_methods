@@ -8,9 +8,9 @@
         list: return answer
 */
 List func( List <int> numbers, int i ){
-  int list = numbers[i];
+  int a = numbers[i];
   numbers.removeAt(i);
-  return [list];
+  return [a];
 }
 void main() {
   print(func([4, 7, 3, 2, 8], 1));
