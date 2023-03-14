@@ -9,7 +9,6 @@
 */
 List func( List <int> numbers, int i ){
   int a = numbers[i];
-  numbers.removeAt(i);
   return [a];
 }
 void main() {
