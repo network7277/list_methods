@@ -8,6 +8,7 @@
 */
 List func( List fruits ){
   var list2 = [];
+  var list1 = [];
   int s = 0;
   int i = 0;
   while ( i < fruits.length ){
@@ -17,8 +18,8 @@ List func( List fruits ){
     }
     i++;
   }
-  list2.add(s);
-  return list2;
+  list1.add(s);
+  return list1 + list2;
 }
 void main(){
   print(func( ["apple", "apple", "apple", "apple", "kiwi"] ));
